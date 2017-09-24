@@ -1,0 +1,79 @@
+Git Commands
+
+Git Initial Push -->
+git add . 
+or git add (file name/folder name)
+git  commit -m "Updated as per PR review comments"
+git push
+
+
+
+
+Git Rebase with feature branch -->
+Git log
+Git status
+Git stash
+Git checkout branch name
+Git pull
+Git rebase “1ad40864cce39435427bd35b85a39b96b3d85d1f”^ -I
+    click i remove pick write edit and then :wq!
+Git stash pop
+Git add.
+Git commit —amend
+    write :q!
+Git rebase —continue
+Git push -f origin “branchName”
+
+
+
+
+Git Rebase with develop branch -->
+Git status
+Git checkout develop
+Git pull
+Git checkout story/branch_name
+git checkout spike/OCTO-7
+Git rebase develop
+Git log
+Git rebase “1528d0856b3a65b833e2ec37454436a7d261ed6d” ^ -i
+	remove pick write edit wq!
+Git commit —amend
+Git rebase —continue
+Git push -f origin story/branch_name
+
+
+
+For interactive mode -->
+gitk
+
+
+Git Rebase if you have missed something -->
+Git status
+Git checkout develop
+Git status
+Git pull
+Git checkout branch_name
+Git status
+Git rebase develop
+Git log
+Git rebase “commitId”^ -i
+Git rebase abort
+Git stash
+Git log
+Git rebase “commitId”^ -i
+Git status
+Git stash pop
+Git reset head “filename”
+Git checkout “filename”
+Git add
+Git commit —amend
+Git rebase —continue
+Git push -f origin “branchname”
+
+Git merge
+
+Git log
+copy sha-id
+Git checkout sha-id
+(Git reset) 
+Git reset —hard sha-id

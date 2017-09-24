@@ -1,0 +1,32 @@
+1.  ls
+    get list of all files
+2.  cd
+    change direcotory
+3.  cd..
+    go to previous folder or back
+4.  mkdir
+    makes dir
+5.  echo "text" > fileName.txt
+    creates file
+6.  sudo
+    gives master permission, can be written before any command. Example sudo nano /etc/hosts
+7.  cat to view file
+    example cat etc/hosts will open hosts file to view
+8.  vi to view file
+    example vi etc/hosts will open hosts file to view
+9.  Shft + cmd + g (in mac)
+    Write folder name to navigate to that folder
+10. lsof -i | grep LISTEN
+    see whats running on all port numbers
+11. sudo netstat -tnlp tcp | grep '\.80 '
+    see whats running on port number 80
+12. Ps -eflgrep tomcat
+    To see if tomcat is up and running
+13  
+14.
+15.
+16.
+17.
+18.
+19.
+20.
