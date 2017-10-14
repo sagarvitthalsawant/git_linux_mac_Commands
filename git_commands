@@ -77,3 +77,14 @@ copy sha-id
 Git checkout sha-id
 (Git reset) 
 Git reset —hard sha-id
+
+
+Rebase with develop to keep feature branch 1 commit ahead of develop
+git status
+from feature branch
+git checkout develop
+git pull
+git checkout branch_name
+git rebase develop
+if any error message
+git push -f
